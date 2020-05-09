@@ -75,7 +75,7 @@ const mapStateToProps = state => {
         cart: state.cart
     }
 }
-const mapDispatchToProps = (dispatch, action) => {
+const mapDispatchToProps = (dispatch, props) => {
     return {
         onDeleteProduct : (indexDelete) => {
             dispatch(actDeleteProduct(indexDelete))
