@@ -7,7 +7,7 @@ export default class CartItem extends Component {
     }
     onUpdateCart = (indexUpdate, requestUpdate) => {
         this.props.onUpdateCart(indexUpdate, requestUpdate);
-        // send message
+       
         let { item } = this.props;
         if (item.product.inventory === item.quantity) {
             this.props.onChangeMessage(message.MEG_EMTY_INVENTORY)
